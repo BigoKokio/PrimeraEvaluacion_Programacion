@@ -1,4 +1,4 @@
-package Clase.EjerciciosPDF;
+package Clase.EjerciciosPDF.EjerciciosFor;
 
 public class Ejercicio11_Pag44 {
     public static void main(String[] args) {

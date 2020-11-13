@@ -1,4 +1,4 @@
-package Clase.EjerciciosPDF;
+package Clase.EjerciciosPDF.EjerciciosFor;
 
 import java.util.Scanner;
 
