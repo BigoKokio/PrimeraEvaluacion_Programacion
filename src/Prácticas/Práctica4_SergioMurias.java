@@ -30,6 +30,7 @@ public class Práctica4_SergioMurias {
                 //El segundo bucle "for" es para el número de filas.
                 //Dentro del segundo bucle "for" se imprimen los caracteres.
                 //Es imprescindible usar "print" y no "println" ya que, si no, se dibujarían "n" filas en una sola columna.
+                //Con un bucle "if" me aseguro de que el número de filas (base) siempre sea mayor que el número de columnas (altura).
                 if (filas > columnas) {
                     for (int i = 1; i <= columnas; i++) {
                         for (int j = 1; j <= filas; j++) {
