@@ -21,7 +21,7 @@ public class Práctica4_SergioMurias {
         switch (respuesta) {
             case 1:
                 System.out.println("Introduce el número de caracteres por fila: ");
-                int fila = sc.nextInt();
+                int filas = sc.nextInt();
                 System.out.println("Introduce el número de columnas: ");
                 int columnas = sc.nextInt();
                 System.out.println("Introduce el caractér: ");
@@ -30,11 +30,20 @@ public class Práctica4_SergioMurias {
                 //El segundo bucle "for" es para el número de filas.
                 //Dentro del segundo bucle "for" se imprimen los caracteres.
                 //Es imprescindible usar "print" y no "println" ya que, si no, se dibujarían "n" filas en una sola columna.
-                for (int i = 1; i <= columnas; i++) {
-                    for (int j = 1; j <= fila; j++) {
-                        System.out.print(caracter);
+                if (filas > columnas) {
+                    for (int i = 1; i <= columnas; i++) {
+                        for (int j = 1; j <= filas; j++) {
+                            System.out.print(caracter);
+                        }
+                        System.out.println("");
                     }
-                    System.out.println("");
+                } else {
+                    for (int i = 1; i <= filas; i++) {
+                        for (int j = 1; j <= columnas; j++) {
+                            System.out.print(caracter);
+                        }
+                        System.out.println("");
+                    }
                 }
                 break;
             case 2:
