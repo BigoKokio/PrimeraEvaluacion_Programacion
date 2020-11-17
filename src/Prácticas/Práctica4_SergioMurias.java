@@ -72,6 +72,7 @@ public class Práctica4_SergioMurias {
                 } else if (numero == 0) {
                     System.out.println("Te has rendido");
                 }
+                break;
         }
     }
 }
