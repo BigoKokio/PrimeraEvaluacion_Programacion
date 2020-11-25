@@ -10,7 +10,8 @@ public class Práctica4_SergioMurias {
         System.out.println("2. Sesión 7 ejercicio 7 Bucle While/Do-While");
         int respuesta = sc.nextInt();
         //El programa te pide que introduzcas un número, el cual se corresponde con un ejercicio.
-        //Si el número introducido es distinto de 1 y distinto de 2, te vuelve a pedir que introduzcas un número con un mensaje de error.
+        //Si el número introducido es distinto de 1 y distinto de 2,
+        //te vuelve a pedir que introduzcas un número con un mensaje de error.
         while ((respuesta != 1) && (respuesta != 2)) {
             System.out.println("Opción incorrecta");
             System.out.println("1. For");
@@ -49,14 +50,30 @@ public class Práctica4_SergioMurias {
                 break;
             case 2:
                 System.out.println("Vamos a encontrar un número elegido al azar entre 1 y 100.");
+                //La funcion "math.random" elige un número al azar.
+                //Dicha función tiene 2 parámetros: número maximo y número minimo.
+                int random = (int) ((Math.random() * 100)+1);
+                //System.out.println(random);
                 System.out.println("Si en algún momento deseas rendirte, introduce el número 0.");
                 System.out.println("Introduce un número entre 1 y 100: ");
                 int numero = sc.nextInt();
-                //La funcion "math.random" elige un número al azar. Dicha función tiene 2 parámetros: número maximo y número minimo.
-                int random = (int) ((Math.random() * 100)+1);
-                //Mientras el número que introduzcas sea distinto al elegido al azar y a 0, el programa te seguirá pidiendo que introduzcas un número.
-                do {
-                    //El programa te avisa si el número que has introducido es mayor o menor al que el ha elegido al azar.
+                //Mientras el número introducido no esté dentro del rango y sea distinto de cero, el programa te seguirá pidiendo un número.
+                while (((numero < 1) || (numero > 100)) && (numero != 0)) {
+                    System.out.println("El número que has introducido está fuera del rango.");
+                    System.out.println("Si en algún momento deseas rendirte, introduce el número 0.");
+                    System.out.println("Introduce un número entre 1 y 100: ");
+                    numero = sc.nextInt();
+                }
+                //Mientras el número sea distinto a cero y no sea el número a adivinar, el programa te seguirá pidiendo un número.
+                while ((numero != 0) && (numero != random)) {
+                    while ((numero < 1) || (numero > 100)) {
+                        System.out.println("El número que has introducido está fuera del rango.");
+                        System.out.println("Si en algún momento deseas rendirte, introduce el número 0.");
+                        System.out.println("Introduce un número entre 1 y 100: ");
+                        numero = sc.nextInt();
+                    }
+                    //Si el número a adivinar es mayor que el introducido, te dirá que el número a adivinar es mayor.
+                    //Si no, te dirá que el número a adivinar es menor.
                     if (random > numero) {
                         System.out.println("El número a encontrar es MAYOR");
                     } else {
@@ -65,8 +82,10 @@ public class Práctica4_SergioMurias {
                     System.out.println("Introduce un número entre 1 y 100: ");
                     System.out.println("Si en algún momento deseas rendirte, introduce el número 0.");
                     numero = sc.nextInt();
-                } while ((numero != 0) && (numero != random));
-                //Si has salido del bucle es porque o has acertado o has introducido un 0. Para cada caso, se usa un "if" para lanzar un mensaje al usuario.
+                }
+                //En este punto del programa, o el número introducido es 0 o el número introducido es el acertado.
+                //Si el número introducido es igual que el número a adivinar, te dirá que has acertado.
+                //Si no, te dirá cuál era el número a adivinar.
                 if (numero == random) {
                     System.out.println("¡Has acertado!");
                 } else if (numero == 0) {
