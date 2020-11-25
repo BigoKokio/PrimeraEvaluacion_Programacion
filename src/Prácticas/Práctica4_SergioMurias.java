@@ -49,47 +49,40 @@ public class Práctica4_SergioMurias {
                 }
                 break;
             case 2:
-                System.out.println("Vamos a encontrar un número elegido al azar entre 1 y 100.");
+                System.out.println("Vamos a encontrar un número elegido al azar entre 1 y 100");
                 //La funcion "math.random" elige un número al azar.
                 //Dicha función tiene 2 parámetros: número maximo y número minimo.
-                int random = (int) ((Math.random() * 100)+1);
-                //System.out.println(random);
-                System.out.println("Si en algún momento deseas rendirte, introduce el número 0.");
+                int random = (int) ((Math.random() * 100) + 1);
+                System.out.println(random);
+                System.out.println("Si en algún momento deseas rendirte, introduce el número 0");
                 System.out.println("Introduce un número entre 1 y 100: ");
                 int numero = sc.nextInt();
-                //Mientras el número introducido no esté dentro del rango y sea distinto de cero, el programa te seguirá pidiendo un número.
-                while (((numero < 1) || (numero > 100)) && (numero != 0)) {
-                    System.out.println("El número que has introducido está fuera del rango.");
-                    System.out.println("Si en algún momento deseas rendirte, introduce el número 0.");
-                    System.out.println("Introduce un número entre 1 y 100: ");
-                    numero = sc.nextInt();
-                }
-                //Mientras el número sea distinto a cero y no sea el número a adivinar, el programa te seguirá pidiendo un número.
-                while ((numero != 0) && (numero != random)) {
-                    while ((numero < 1) || (numero > 100)) {
-                        System.out.println("El número que has introducido está fuera del rango.");
-                        System.out.println("Si en algún momento deseas rendirte, introduce el número 0.");
-                        System.out.println("Introduce un número entre 1 y 100: ");
-                        numero = sc.nextInt();
-                    }
-                    //Si el número a adivinar es mayor que el introducido, te dirá que el número a adivinar es mayor.
-                    //Si no, te dirá que el número a adivinar es menor.
-                    if (random > numero) {
-                        System.out.println("El número a encontrar es MAYOR");
+                //Mientras el número introducido ni sea cero ni sea el número al azar,
+                //el programa te seguirá pidiendo un número.
+                while (numero != 0 && numero != random) {
+                    //Si el número introducido es mayor que el número al azar y es menor o igual a cien,
+                    //te dirá que el número al azar es mayor.
+                    if (numero > random && numero <= 100) {
+                        System.out.println("El número al azar es MAYOR");
+                        //Si el número introducido es menor que el número al azar y es mayor o igual a cien,
+                        //te dirá que el número al azar es menor.
+                    } else if (numero < random && numero >= 1) {
+                        System.out.println("El numero al azar es MENOR");
+                        //Si el número introducido no es ninguna de los anteriores, significa que está fuera del rango.
                     } else {
-                        System.out.println("El número a encontrar es MENOR");
+                        System.out.println("El número que has introducido está fuera del rango.");
                     }
-                    System.out.println("Introduce un número entre 1 y 100: ");
                     System.out.println("Si en algún momento deseas rendirte, introduce el número 0.");
+                    System.out.println("Introduce un numero entre 1 y 100: ");
                     numero = sc.nextInt();
                 }
                 //En este punto del programa, o el número introducido es 0 o el número introducido es el acertado.
                 //Si el número introducido es igual que el número a adivinar, te dirá que has acertado.
                 //Si no, te dirá cuál era el número a adivinar.
-                if (numero == random) {
-                    System.out.println("¡Has acertado!");
-                } else if (numero == 0) {
+                if (numero == 0) {
                     System.out.println("Te has rendido, el número al azar era " + random);
+                } else {
+                    System.out.println("¡Has acertado!");
                 }
                 break;
         }
