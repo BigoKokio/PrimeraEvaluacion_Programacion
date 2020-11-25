@@ -70,7 +70,7 @@ public class Práctica4_SergioMurias {
                 if (numero == random) {
                     System.out.println("¡Has acertado!");
                 } else if (numero == 0) {
-                    System.out.println("Te has rendido");
+                    System.out.println("Te has rendido, el número al azar era " + random);
                 }
                 break;
         }
