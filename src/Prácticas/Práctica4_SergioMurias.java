@@ -53,7 +53,7 @@ public class Práctica4_SergioMurias {
                 //La funcion "math.random" elige un número al azar.
                 //Dicha función tiene 2 parámetros: número maximo y número minimo.
                 int random = (int) ((Math.random() * 100) + 1);
-                System.out.println(random);
+                //System.out.println(random);
                 System.out.println("Si en algún momento deseas rendirte, introduce el número 0");
                 System.out.println("Introduce un número entre 1 y 100: ");
                 int numero = sc.nextInt();
