@@ -1,5 +1,6 @@
 package Ejemplos;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Ejemplo {
@@ -80,7 +81,7 @@ public class Ejemplo {
         } else {
             System.out.println("El segundo número debe ser mayor que el segundo");
         }
-        //
+        // Tabla de multiplicar de un número
         System.out.println("Introduce un número entero positivo: ");
         int a1 = sc.nextInt();
         if (a1 >= 0) {
@@ -94,7 +95,45 @@ public class Ejemplo {
         } else {
             System.out.println("El número debe ser positivo");
         }
-        //
+        // Mostrar un número invertido
+        System.out.println("Introduce un número de tres dígitos: ");
+        int numero = sc.nextInt();
+        int centenas = numero / 100;
+        int decenas =  (numero % 100) / 10;
+        int unidades = (numero % 100) % 10;
+        if (unidades != 0) {
+            System.out.print(unidades);
+            System.out.print(decenas);
+            System.out.print(centenas);
+        } else {
+            System.out.print(decenas);
+            System.out.print(centenas);
+        }
+        // Introducir números en un array
+        int[] array = new int[5];
+        for (int i = 0; i < array.length; i++) {
+            System.out.println("Introduce un número: ");
+            array[i] = sc.nextInt();
+        }
+        System.out.println(Arrays.toString(array));
+        // Comprobar si un array está ordenado
+        int[] array2 = {1, 3, 6, 7, 8, 9};
+        boolean ordenado = true;
+        for (int i = 0; i < array2.length - 1; i++) {
+            if (array2[i] > array2[i + 1]) {
+                ordenado = false;
+                break;
+            }
+        }
+        if (ordenado == true) {
+            System.out.println("El array está ordenado");
+        } else {
+            System.out.println("El array está ordenado");
+        }
+        // Otra forma de recorrer un array
+        for (int elem : array) { // Para cada elemento del array "array"
+            System.out.print(elem + " ");
+        }
     }
 }
 
