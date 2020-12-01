@@ -11,7 +11,6 @@ public class Ej2 {
             System.out.println("Introduce una cadena de texto: ");
             cadenas[i] = sc.next();
         }
-        //System.out.println(Arrays.toString(cadenas));
         String[] inverso = new String[5];
         for (int i = 0; i < inverso.length; i++) {
             inverso[4 - i] = cadenas[i];
