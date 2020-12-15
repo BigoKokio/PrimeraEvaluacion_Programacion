@@ -10,10 +10,6 @@ public class Ej10 {
         for (int i = 0; i < matriz.length; i++) {
             for (int j = 0; j < matriz.length; j++) {
                 matriz[i][j] = (int) (Math.random() * 10);
-            }
-        }
-        for (int i = 0; i < matriz.length; i++) {
-            for (int j = 0; j < matriz.length; j++) {
                 sumaFilas[i] = sumaFilas[i] + matriz[i][j];
             }
         }
