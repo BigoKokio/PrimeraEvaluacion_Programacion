@@ -18,6 +18,5 @@ public class Ejercicios {
         } else {
             System.out.println("El número debe ser positivo");
         }
-
     }
 }

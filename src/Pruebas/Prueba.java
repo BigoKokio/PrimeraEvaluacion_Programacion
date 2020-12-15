@@ -6,14 +6,10 @@ import java.util.Scanner;
 public class Prueba {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int cont = 0;
-        int[] array = {'a', 'b', 'c', 'a', 'b', 'c', 'a'};
-        for (int elem : array) {
-            if (elem == 'a') {
-                cont++;
-            }
+        int [] [] matriz = {{1, 2, 3, 1}, {3, 4, 1, 2}, {4, 4, 1, 0},};
+        for (int i = 0; i < matriz.length; i++) {
+            System.out.println(Arrays.toString(matriz[i]));
         }
-        System.out.println("Hay " + cont + " letras 'a' en el array");
     }
 }
 

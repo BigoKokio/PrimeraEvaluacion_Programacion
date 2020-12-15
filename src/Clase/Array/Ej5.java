@@ -6,13 +6,15 @@ import java.util.Scanner;
 public class Ej5 {
     public static void main(String[] args) {
         Scanner sc = new Scanner (System.in);
-        double[] numeros = new double[10];
+        int[] numeros = new int[10];
         for (int i = 0; i < numeros.length; i++) {
-            numeros[i] = Math.random() * 10;
+            numeros[i] = (int) (Math.random() * 100);
         }
+        for (int i = 0; i < numeros.length; i++) {
+            System.out.print(numeros[i] + "\t");
+        }
+        System.out.println();
+        Arrays.sort(numeros);
         System.out.println(Arrays.toString(numeros));
-        for (int i = 0; i < numeros.length; i++) {
-
-        }
     }
 }

@@ -134,6 +134,15 @@ public class Ejemplo {
         for (int elem : array) { // Para cada elemento del array "array"
             System.out.print(elem + " ");
         }
+        // Declara un array bidimensional de 3 filas y 4 columnas
+        int [] [] matriz = {{1, 2, 3, 1}, {3, 4, 1, 2}, {4, 4, 1, 0},};
+        // Mostrar un elemento de un array bidimensional
+        int elemArray = matriz [0] [0];
+        System.out.println(elemArray);
+        // Mostrar los elementos de un array bidimensional
+        for (int i = 0; i < matriz.length; i++) {
+            System.out.println(Arrays.toString(matriz[i]));
+        }
     }
 }
 
