@@ -3,7 +3,7 @@ package Programación;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Ejemplo {
+public class Ejemplos {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("¿Cómo te llamas?");
