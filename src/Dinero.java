@@ -25,6 +25,5 @@ public class Dinero {
         int unCent = sc.nextInt();
         double suma = (diezEuro * 10) + (cincEuro * 5) + (dosEuro * 2) + (unEuro * 1) + (cincuentaCent * 0.5) + (veinCent * 0.2) + (diezCent * 0.1) + (cincCent * 0.05) + (dosCent * 0.02) + (unCent * 0.01);
         System.out.println(suma);
-
     }
 }
