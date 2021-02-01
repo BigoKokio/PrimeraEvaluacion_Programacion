@@ -1,0 +1,11 @@
+@startuml
+left to right direction
+package Caso_De_Uso {
+    actor Jugador
+    rectangle Buscaminas {
+        (Iniciar partida) -- Jugador 
+        (Descubrir una casilla) -- Jugador
+        (Marcar una casilla) -- Jugador
+    }
+}
+@enduml

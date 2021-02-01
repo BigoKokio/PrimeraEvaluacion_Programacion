@@ -2,7 +2,7 @@ package Programación.EjerciciosString;
 
 import java.util.Scanner;
 
-public class Ej1 {
+public class Ej01 {
     static Scanner sc = new Scanner(System.in);
     public static void main(String[] args) {
         String str = sc.nextLine();
