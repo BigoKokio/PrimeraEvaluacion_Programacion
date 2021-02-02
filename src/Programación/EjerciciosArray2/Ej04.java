@@ -2,7 +2,7 @@ package Programación.EjerciciosString;
 
 import java.util.Scanner;
 
-public class Ej4 {
+public class Ej04 {
     Scanner sc = new Scanner(System.in);
     public static void main(String[] args) {
         char[] a = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j'};

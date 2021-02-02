@@ -3,7 +3,7 @@ package Programación.EjerciciosArray2;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Ej7 {
+public class Ej07 {
     static Scanner sc = new Scanner(System.in);
     public static void main(String[] args) {
         int[] A = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};

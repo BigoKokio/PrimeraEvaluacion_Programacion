@@ -3,7 +3,7 @@ package Programación.EjerciciosString;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Ej5 {
+public class Ej05 {
     Scanner sc = new Scanner(System.in);
     public static void main(String[] args) {
         char[] A = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J'};
