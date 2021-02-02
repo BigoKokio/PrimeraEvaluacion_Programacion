@@ -1,0 +1,20 @@
+@startuml
+
+class Persona {
+nombre : String
+edad : int
+}
+class Directivo {
+categoría : String
+}
+class Cliente {
+teléfono : String
+}
+class Empresa {
+}
+Persona <|-- Empleado
+Persona <|-- Cliente
+Empleado <|-- Directivo
+Directivo -- Empleado
+Directivo "1" -- "0..*" Empleado : subordinado
+@enduml
