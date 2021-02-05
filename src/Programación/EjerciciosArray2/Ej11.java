@@ -1,0 +1,28 @@
+package Programación.EjerciciosArray2;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Ej11 {
+    static Scanner sc = new Scanner(System.in);
+    public static void main(String[] args) {
+        int[] array = new int[10];
+        for (int i = 0; i < array.length; i++) {
+            array[i] = 2 + 2 * i;
+        }
+        //System.out.println(Arrays.toString(array));
+        System.out.println("Introduce un número: ");
+        int n = sc.nextInt();
+        int pos = 0;
+        while (pos < array.length && array[pos] < n) {
+            pos++;
+        }
+        //System.out.println(pos);
+        int[] copia = array.clone();
+        for (int i = pos; i < array.length - 1; i++) {
+            array[i + 1] = copia[i];
+        }
+        array[pos] = n;
+        System.out.println(Arrays.toString(array));
+    }
+}
