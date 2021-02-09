@@ -1,18 +1,20 @@
-package ejerciciosArrays1;
+package Programación.EjerciciosArray;
 
 import java.util.Arrays;
 import java.util.Scanner;
 
 public class Ej18 {
     public static void main(String[] args) {
-        /* Escriba un programa que permita crear una lista de palabras y que, a continuación dé tres
+        /*
+        Escriba un programa que permita crear una lista de palabras y que, a continuación dé tres
         opciones:
-• Contar: Me pide una cadena, y me dice cuantas veces aparece en la lista
-• Modificar: Me pide una cadena, y otra cadena a modificar, y modifica todas las
-        apariciones de la primera por la segunda en la lista.
-• Eliminar: Me pide una cadena, y la elimina de la lista.
-• Mostrar: Muestra la lista de cadenas
-• Terminar */
+            • Contar: Me pide una cadena, y me dice cuantas veces aparece en la lista
+            • Modificar: Me pide una cadena, y otra cadena a modificar, y modifica todas las
+              apariciones de la primera por la segunda en la lista.
+            • Eliminar: Me pide una cadena, y la elimina de la lista.
+            • Mostrar: Muestra la lista de cadenas
+            • Terminar
+        */
         Scanner sc = new Scanner(System.in);
         int n;
         do {
@@ -20,15 +22,12 @@ public class Ej18 {
             n = sc.nextInt();
         } while (n <= 0);
         sc.nextLine(); // para liberar el scanner y que funcione después
-
         String[] cadena = new String[n];
-
         // Rellenamos el array
         for (int i = 0; i < cadena.length; i++) {
             System.out.println("Introduce cadena:");
             cadena[i] = sc.nextLine();
         }
-
         int opcion;
         do {
             System.out.println("Elige una opción:");
@@ -39,7 +38,6 @@ public class Ej18 {
             System.out.println("5. Terminar");
             opcion = sc.nextInt();
         } while (opcion < 1 || opcion > 5);
-
         switch (opcion) {
             case 1: // Contar: Me pide una cadena, y me dice cuantas veces aparece en la lista
                 System.out.println("Cadena a buscar: ");

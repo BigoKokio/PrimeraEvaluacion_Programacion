@@ -6,6 +6,10 @@ import java.util.Scanner;
 public class Ej15 {
     static Scanner sc = new Scanner(System.in);
     public static void main(String[] args) {
+        /*
+        Leer 10 enteros ordenados crecientemente. Leer N y buscarlo en la tabla. Se debe
+        mostrar la posición en que se encuentra. Si no está, indicarlo con un mensaje.
+        */
         int[] array = new int[10];
         for (int i = 0; i < array.length; i++) {
             array[i] = (int) (Math.random() * 1000);

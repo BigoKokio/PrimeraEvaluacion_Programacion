@@ -4,6 +4,10 @@ import java.util.Scanner;
 
 public class Ej5 {
     public static void main(String[] args) {
+        /*
+        Si tenemos una cadena con un nombre y apellidos, realizar un programa que muestre las iniciales en
+        mayúsculas.
+        */
         Scanner sc = new Scanner(System.in);
         System.out.println("Nombre y apellidos: ");
         String cadena = sc.nextLine();

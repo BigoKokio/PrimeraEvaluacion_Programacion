@@ -4,6 +4,11 @@ import java.util.Scanner;
 
 public class Ej3 {
     public static void main(String[] args) {
+        /*
+        Se quiere realizar un programa que lea por teclado las 5 notas obtenidas por un alumno
+        (comprendidas entre 0 y 10). A continuación debe mostrar todas las notas, la nota media, la
+        nota más alta que ha sacado y la menor.
+        */
         Scanner sc = new Scanner (System.in);
         double sumaMedia = 0;
         double media = 0;

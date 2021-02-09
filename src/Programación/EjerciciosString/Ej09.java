@@ -4,6 +4,10 @@ import java.util.Scanner;
 
 public class Ej09 {
     public static void main(String[] args) {
+        /*
+        Realizar un programa que compruebe si una cadena contiene una subcadena. Las dos cadenas se
+        introducen por teclado.
+        */
         Scanner sc = new Scanner(System.in);
         System.out.println("Cadena: ");
         String cadena = sc.nextLine();

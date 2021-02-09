@@ -4,6 +4,10 @@ import java.util.Scanner;
 
 public class Ej06 {
     public static void main(String[] args) {
+        /*
+        Realizar un programa que, dada una cadena de caracteres, genere otra cadena resultado de invertir
+        la primera.
+        */
         Scanner sc = new Scanner(System.in);
         System.out.println("Cadena:");
         String cadena = sc.nextLine();

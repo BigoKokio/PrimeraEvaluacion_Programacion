@@ -6,6 +6,11 @@ import java.util.Scanner;
 public class Ej11 {
     static Scanner sc = new Scanner(System.in);
     public static void main(String[] args) {
+        /*
+        Leer 5 elementos numéricos que se introducirán ordenados de forma creciente. Éstos
+        los guardaremos en una tabla de tamaño 10. Leer un número N, e insertarlo en el lugar
+        adecuado para que la tabla continúe ordenada.
+        */
         int[] array = new int[10];
         for (int i = 0; i < array.length; i++) {
             array[i] = 2 + 2 * i;

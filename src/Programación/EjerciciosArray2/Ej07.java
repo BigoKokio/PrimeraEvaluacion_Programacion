@@ -6,6 +6,10 @@ import java.util.Scanner;
 public class Ej07 {
     static Scanner sc = new Scanner(System.in);
     public static void main(String[] args) {
+        /*
+        Leer por teclado una serie de 10 números enteros. La aplicación debe indicarnos si los
+        números están ordenados de forma creciente, decreciente, o si están desordenados.
+        */
         int[] A = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
         int[] B = {9, 8, 7, 6, 5, 4, 3, 2, 1, 0};
         int[] C = {0, 1, 2, 3, 6, 5, 7, 8, 9, 0};

@@ -4,6 +4,13 @@ import java.util.Arrays;
 
 public class Ej10 {
     public static void main(String[] args) {
+        /*
+        Diseñar el algoritmo correspondiente a un programa, que:
+            • Crea una tabla (lista con dos dimensiones) de 5x5 enteros.
+            • Carga la tabla con valores numéricos enteros.
+            • Suma todos los elementos de cada fila y todos los elementos de cada columna
+              visualizando los resultados en pantalla.
+        */
         int[][] matriz = new int[5][5];
         int[] sumaFilas = new int[5];
         int[] sumaColumnas = new int[5];

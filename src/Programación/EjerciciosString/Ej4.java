@@ -4,6 +4,10 @@ import java.util.Scanner;
 
 public class Ej4 {
     public static void main(String[] args) {
+        /*
+        Suponiendo que hemos introducido una cadena por teclado que representa una frase (palabras
+        separadas por espacios), realiza un programa que cuente cuantas palabras tiene.
+        */
         Scanner sc = new Scanner(System.in);
         System.out.println("Cadena: ");
         String cadena = sc.nextLine();

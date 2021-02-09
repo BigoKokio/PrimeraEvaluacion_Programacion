@@ -4,6 +4,10 @@ import java.util.Scanner;
 
 public class Ej02 {
     public static void main(String[] args) {
+        /*
+        Realizar un programa que comprueba si una cadena leída por teclado comienza por una subcadena
+        introducida por teclado.
+        */
         Scanner sc = new Scanner(System.in);
         System.out.println("Introduce cadena: ");
         String cadena = sc.nextLine();

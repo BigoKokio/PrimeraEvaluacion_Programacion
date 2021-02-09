@@ -5,6 +5,10 @@ import java.util.Scanner;
 
 public class Ej4While {
     public static void main(String[] args) {
+        /*
+        Programa que declare una lista y la vaya llenando de números hasta que introduzcamos un
+        número negativo. Entonces se debe imprimir el vector (sólo los elementos introducidos).
+        */
         Scanner sc = new Scanner (System.in);
         int tamaño = 0;
         do {

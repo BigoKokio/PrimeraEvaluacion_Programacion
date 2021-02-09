@@ -1,4 +1,4 @@
-package Programación.EjerciciosString;
+package Programación.EjerciciosArray2;
 
 import java.util.Arrays;
 import java.util.Scanner;
@@ -6,6 +6,10 @@ import java.util.Scanner;
 public class Ej05 {
     Scanner sc = new Scanner(System.in);
     public static void main(String[] args) {
+        /*
+        Leer por teclado dos tablas de 10 números enteros y mezclarlas en una tercera de la
+        forma: el 1o de A, el 1o de B, el 2o de A, el 2o de B, etc.
+        */
         char[] A = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J'};
         char[] B = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j'};
         char[] C = new char[20];

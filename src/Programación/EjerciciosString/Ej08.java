@@ -4,6 +4,10 @@ import java.util.Scanner;
 
 public class Ej08 {
     public static void main(String[] args) {
+        /*
+        Realizar un programa que lea una cadena por teclado y convierta las mayúsculas a minúsculas y
+        viceversa.
+        */
         Scanner sc = new Scanner(System.in);
         System.out.println("Cadena: ");
         String cadena = sc.nextLine();

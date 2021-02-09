@@ -4,6 +4,10 @@ import java.util.Scanner;
 
 public class Ej03 {
     public static void main(String[] args) {
+        /*
+        Pide una cadena y un carácter por teclado (valida que sea un carácter) y muestra cuantas veces
+        aparece el carácter en la cadena.
+        */
         Scanner sc = new Scanner(System.in);
         System.out.println("Introduce cadena: ");
         String cadena = sc.nextLine();

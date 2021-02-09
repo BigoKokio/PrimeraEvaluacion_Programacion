@@ -4,6 +4,10 @@ import java.util.Scanner;
 
 public class Ej07 {
     public static void main(String[] args) {
+        /*
+        Pide una cadena y dos caracteres por teclado (valida que sea un carácter), sustituye la aparición del
+        primer carácter en la cadena por el segundo carácter.
+        */
         Scanner sc = new Scanner(System.in);
         // Pide una cadena
         System.out.println("Cadena: ");

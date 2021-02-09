@@ -5,6 +5,9 @@ import java.util.Scanner;
 
 public class Ej10 {
     public static void main(String[] args) {
+        /*
+        Ídem, desplazar N posiciones (N es introducido por el usuario).
+        */
         Scanner sc = new Scanner(System.in);
         System.out.println("Introduce N: ");
         int n = sc.nextInt();

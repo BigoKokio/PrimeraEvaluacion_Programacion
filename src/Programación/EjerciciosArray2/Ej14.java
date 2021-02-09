@@ -6,6 +6,10 @@ import java.util.Scanner;
 public class Ej14 {
     static Scanner sc = new Scanner(System.in);
     public static void main(String[] args) {
+        /*
+        Leer dos series de 10 enteros, que estarán ordenados crecientemente. Copiar (fusionar)
+        las dos tablas en una tercera, de forma que sigan ordenados.
+        */
         int[] ArrayA = new int[10];
         int[] ArrayB = new int[10];
         for (int i = 0; i < ArrayA.length; i++) {

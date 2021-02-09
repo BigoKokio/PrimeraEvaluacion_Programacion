@@ -2,6 +2,10 @@ package Programación.EjerciciosArray2;
 
 public class Ej07POO {
     public static void main(String[] args) {
+        /*
+        Leer por teclado una serie de 10 números enteros. La aplicación debe indicarnos si los
+        números están ordenados de forma creciente, decreciente, o si están desordenados.
+        */
         int[] A = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10}; // ascendente
         int[] B = {10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0}; // descendente
         int[] C = {10, 9, 8, 6, 7, 5, 4, 3, 2, 1, 0}; // desordenado

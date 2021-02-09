@@ -6,6 +6,10 @@ import java.util.Scanner;
 public class Ej12 {
     static Scanner sc = new Scanner(System.in);
     public static void main(String[] args) {
+        /*
+        Leer por teclado una tabla de 10 elementos numéricos enteros y leer una posición (entre
+        0 y 9). Eliminar el elemento situado en la posición dada sin dejar huecos.
+        */
         int[] array = new int[10];
         for (int i = 0; i < array.length; i++) {
             array[i] = (int) (Math.random() * 1000);

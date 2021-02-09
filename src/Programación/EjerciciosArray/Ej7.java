@@ -5,6 +5,10 @@ import java.util.Scanner;
 
 public class Ej7 {
     public static void main(String[] args) {
+        /*
+        Programa que declare tres listas ‘lista1’, ‘lista2’ y ‘lista3’ de cinco enteros cada uno, pida
+        valores para ‘lista1’ y ‘lista2’ y calcule lista3=lista1+lista2.
+        */
         Scanner sc = new Scanner (System.in);
         int[] lista1 = new int[10];
         int[] lista2 = new int[10];

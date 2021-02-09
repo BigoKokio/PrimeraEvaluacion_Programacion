@@ -6,6 +6,11 @@ import java.util.Scanner;
 public class Ej13 {
     static Scanner sc = new Scanner(System.in);
     public static void main(String[] args) {
+        /*
+        Leer 10 enteros. Guardar en otra tabla los elementos pares de la primera, y a
+        continuación los elementos impares. Realizar dos versiones: una trabajando con los valores
+        y otra trabajando con los índices.
+        */
         int[] array1 = new int[10];
         for (int i = 0; i < array1.length; i++) {
             array1[i] = (int) (Math.random() * 1000);

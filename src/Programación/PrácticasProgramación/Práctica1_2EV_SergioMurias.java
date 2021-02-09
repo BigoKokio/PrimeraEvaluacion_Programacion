@@ -14,8 +14,8 @@ public class Práctica1_2EV_SergioMurias {
         int empates = 0;
         rellenarBaraja(baraja1);
         rellenarBaraja(baraja2);
-        //barajar(rellenarBaraja(baraja1));
-        //barajar(rellenarBaraja(baraja2));
+        barajar(baraja1);
+        barajar(baraja2);
         int contJug = 1;
         do {
             System.out.println("");
@@ -47,13 +47,14 @@ public class Práctica1_2EV_SergioMurias {
         System.out.println(Arrays.toString(arrayRB));
     }
     public static void barajar(int[] array) {
+        int[] arrayB = new int[40];
         Random r = new Random();
-        for (int i = 0; i < array.length; i++) {
-            int posAleatoria = r.nextInt(array.length);
-            int temp = array[i];
-            array[i] = array[posAleatoria];
-            array[posAleatoria] = temp;
+        for (int i = 0; i < arrayB.length; i++) {
+            int posAleatoria = r.nextInt(arrayB.length);
+            int temp = arrayB[i];
+            arrayB[i] = arrayB[posAleatoria];
+            arrayB[posAleatoria] = temp;
         }
-        System.out.println(Arrays.toString(array));
+        System.out.println(Arrays.toString(arrayB));
     }
 }
