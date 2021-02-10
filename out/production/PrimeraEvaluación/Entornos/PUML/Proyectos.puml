@@ -1,0 +1,72 @@
+@startuml proyectos
+'https://plantuml.com/class-diagram
+
+skinparam classAttributeIconSize 0
+
+Proyecto o-- "1..* \n {ordered}" Ciclo
+Ciclo -down- Ejecutable
+
+Ciclo o-right- "4 \n {ordered}" Fase
+Fase  o-right- "1..* \n {ordered}" Iteración
+
+Iteración -down- "1..*" Artefacto : produce
+Artefacto <|-- Documento
+Artefacto <|-- Software
+
+Iteración o-right- "1..*" Actividad
+Actividad "0..*" o-down- "0..*" Recurso
+Recurso <|-- Humano
+Recurso <|-- Material
+
+class Proyecto {
+    - nombre : String
+    - avance : Float
+}
+
+class Ejecutable {
+    - bytes
+}
+
+class Fase {
+    - tipo : TipoFase
+}
+
+enum TipoFase << enumeration >> {
+    inicio
+    elaboración
+    construcción
+    transición
+}
+
+class Iteración {
+    - comienzo : Date
+}
+
+class Artefacto {}
+
+class Documento {
+    - nombre : String
+    - ubicación
+}
+
+class Software {
+    - bytes
+}
+
+class Actividad {
+    - duración : Integer
+    - avance : Float
+}
+
+class Recurso {}
+
+class Humano {
+    - nombre : String 
+}
+
+class Material {
+    - inventario : String
+}
+
+
+@enduml
