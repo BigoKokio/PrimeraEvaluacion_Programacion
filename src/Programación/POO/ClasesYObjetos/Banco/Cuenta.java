@@ -19,13 +19,13 @@ public class Cuenta {
     public String getTitular() {
         return titular;
     }
-    // No se crea un setter para el titular
-    // porque no se puede cambiar el titular de una cuenta
+    /* No se crea un setter para el titular
+    porque no se puede cambiar el titular de una cuenta */
     public long getNúmero() {
         return número;
     }
-    // No se crea un setter para el número
-    // porque no se puede cambiar el número de una cuenta
+    /* No se crea un setter para el número
+    orque no se puede cambiar el número de una cuenta */
     public long getSaldo() {
         return saldo;
     }
