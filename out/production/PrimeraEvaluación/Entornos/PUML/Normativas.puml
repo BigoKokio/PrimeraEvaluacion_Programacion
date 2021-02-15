@@ -1,0 +1,26 @@
+@startuml normativas
+left to right direction
+skinparam packageStyle rectangle
+actor Funcionario
+actor Registrador
+
+Funcionario <|-- Registrador
+
+rectangle "Subsistema de funcionarios" {
+  Funcionario -- (suscribirse a avisos de normativa)
+  Funcionario -- (consultar normativas)
+  (consultar normativas) <. (ver una normativa) : extend
+}
+
+rectangle "Subsistema de resistradores" {
+  Registrador -- (registrar normativa)
+  Registrador -- (borrar normativa)
+  Registrador -- (reemplazar normativa)
+  Registrador -- (acceso al sistema)
+}
+
+(consultar normativas) <. (registrar normativa) : include
+(consultar normativas) <. (borrar normativa) : include
+(consultar normativas) <. (reemplazar normativa) : include
+
+@enduml

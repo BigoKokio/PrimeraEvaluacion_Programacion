@@ -1,4 +1,4 @@
-@startuml
+@startuml empresa
 'https://plantuml.com/class-diagram
 
 'left to right direction
@@ -15,29 +15,29 @@ Empleado "1..*" --* "1" Empresa : empleados
 Cliente "0..*" --o "1..*" Empresa : clientes
 
 class Persona {
-- nombre : String
-- edad : int
-+ mostrar()
+    - nombre : String
+    - edad : int
+    + mostrar()
 }
 
 class Empleado {
-- sueldoBruto : float
-+ mostrar()
-+ calcularSalarioNeto()
+    - sueldoBruto : float
+    + mostrar()
+    + calcularSalarioNeto()
 }
 
 class Cliente {
-- telefono : String
-+ mostrar()
+    - telefono : String
+    + mostrar()
 }
 
 class Directivo {
-- categoría : int
-+ mostrar()
+    - categoría : int
+    + mostrar()
 }
 
 class Empresa {
-- nombre : String
+    - nombre : String
 }
 
 @enduml

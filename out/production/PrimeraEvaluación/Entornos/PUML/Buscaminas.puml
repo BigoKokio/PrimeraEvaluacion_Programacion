@@ -1,0 +1,17 @@
+@startuml buscaminas
+' esto es un comentario
+
+left to right direction
+skinparam packageStyle rectangle
+
+' definición de los actores
+actor jugador
+
+' los límites del sistema se denotan mediante un rectángulo
+
+rectangle buscaminas {
+  jugador -- (iniciar partida)
+  jugador -- (descubrir casilla)
+  jugador -- (marcar casilla)
+}
+@enduml
