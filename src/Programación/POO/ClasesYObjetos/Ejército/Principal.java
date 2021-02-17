@@ -3,13 +3,14 @@ package Programación.POO.ClasesYObjetos.Ejército;
 public class Principal {
     public static void main(String[] args) {
         crearEjercito();
-        System.out.println(Unidad.contadorUnidades);
-        System.out.println(Caballería.contadorCaballería);
-        System.out.println(General.contadorGenerales);
-        System.out.println(Médico.contadorMédicos);
+        System.out.println("Unidades: " + Unidad.contadorUnidades);
+        System.out.println("Caballerías: " + Caballería.contadorCaballería);
+        System.out.println("Generales: " + General.contadorGenerales);
+        System.out.println("Médicos: " + Médico.contadorMédicos);
     }
     public static void crearEjercito() {
         Unidad U1 = new Unidad("Infantería 1");
+        System.out.println(U1.toString());
         Unidad U2 = new Unidad("Infantería 2");
         Unidad U3 = new Unidad("Infantería 3");
         Unidad U4 = new Unidad("Infantería 4");
