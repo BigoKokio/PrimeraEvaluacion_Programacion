@@ -12,6 +12,9 @@ public class PrincipalCuenta {
         c2.ingresar(6000);
         System.out.println("Saldo de " + c2.getTitular() + ": " + c2.getSaldo());
         System.out.println("-----------------------");
-        //c2.retirar(7000);
+        c1.retirar(200);
+        c2.retirar(8000);
+        System.out.println("-----------------------");
+        c1.imprimir();
     }
 }

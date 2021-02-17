@@ -47,11 +47,19 @@ public class Cuenta {
         return saldo;
     }
     public long retirar(long cantidad) {
-        if (bloqueada == false && cantidad < saldo) {
-            this.saldo = this.saldo - cantidad;
+        if (bloqueada == false) {
+            if (cantidad < saldo) {
+                this.saldo = this.saldo - cantidad;
+                System.out.println("Saldo: " + this.saldo);
+            } else {
+                System.out.println("Operación rechazada: no dispone de esa cantidad");
+            }
         } else {
-            System.out.println("Operación rechazada: no dispone de esa cantidad");
+            System.out.println("Operación rechazada: la cuenta está bloqueada");
         }
         return saldo;
+    }
+    public void imprimir() {
+        System.out.println("El titular " + this.titular + " con número de cuenta " + this.número + " tiene un saldo de " + this.saldo + " euros.");
     }
 }
