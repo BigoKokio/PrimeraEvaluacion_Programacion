@@ -1,0 +1,34 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+skinparam classAttributeIconSize 0
+
+Socios "0..1" --- "1" Instalaciones : reserva
+Socios "1" --- "0..1" Artículos : puede reservar
+(Instalaciones, Socios) .. Fecha
+
+enum Instalaciones <<enumeration>> {
+    piscinas
+    frontones
+    gimnasios
+    pistas de tenis
+}
+class Socios {
+    - nombre : String
+    - dirección : String
+    - ciudad : String
+    - provincia : String
+    - teléfono : integer
+    - cuota : integer
+}
+enum Artículos <<enumeration>> {
+    balones
+    redes
+    raquetas
+}
+class Fecha {
+    - horaInicio : Date
+    - horaFin : Date
+}
+
+@enduml

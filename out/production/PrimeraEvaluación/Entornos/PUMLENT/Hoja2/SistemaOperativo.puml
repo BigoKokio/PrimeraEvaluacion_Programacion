@@ -1,0 +1,16 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+skinparam classAttributeIconSize 0
+
+Directorio "0..1" --- "0..1" Directorio : contiene
+Directorio "1..*" --- "1" Usuario : posee
+
+class Directorio {
+    - Propietario : String
+}
+
+class Usuario {
+
+}
+@enduml

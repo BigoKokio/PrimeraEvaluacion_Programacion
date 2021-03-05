@@ -1,0 +1,22 @@
+x   @startuml
+'https://plantuml.com/sequence-diagram
+left to right direction
+skinparam packageStyle rectangle
+
+actor Administrador
+
+rectangle Proyectos {
+    (Agregar proyecto) -- Administrador
+    Administrador -- (Eliminar proyecto)
+    (Eliminar proyecto) <.. (Encontrar proyecto) : <<extend>>
+    Administrador -- (Actualizar proyecto)
+    (Actualizar proyecto) <.. (Encontrar proyecto) : <<extend>>
+    (Cambiar información tareas proyecto) <.. (Actualizar proyecto) : <<include>>
+    (Cambiar recursos proyecto) <.. (Actualizar proyecto) : <<include>>
+    Administrador -- (Avances proyecto)
+    (Avances proyecto) ..> (Documento) : <<extend>>
+    (Documento) ..> (E-Mail) : <<include>>
+    (Documento) ..> (Web) : <<include>>
+}
+
+@enduml

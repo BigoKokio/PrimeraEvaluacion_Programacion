@@ -1,5 +1,7 @@
 package Programación.POO.ClasesYObjetos.Banco;
 
+import java.util.Scanner;
+
 public class Cuenta {
     private String titular;
     private long número;
@@ -41,6 +43,7 @@ public class Cuenta {
     public long ingresar(long cantidad) {
         if (bloqueada == false) {
             this.saldo = this.saldo + cantidad;
+            System.out.println("Saldo: " + this.saldo);
         } else {
             System.out.println("Operación rechazada: esta cuenta está bloqueada");
         }
@@ -61,5 +64,42 @@ public class Cuenta {
     }
     public void imprimir() {
         System.out.println("El titular " + this.titular + " con número de cuenta " + this.número + " tiene un saldo de " + this.saldo + " euros.");
+    }
+    public void cajero () {
+        Scanner sc = new Scanner(System.in);
+        boolean seguir = true;
+        do {
+            System.out.println("¿De qué cuenta quieres hacer las operaciones?: ");
+            System.out.println("--Operaciones--");
+            System.out.println("1. Ingresar: ");
+            System.out.println("2. Retirar: ");
+            System.out.println("3. Consultar: ");
+            System.out.println("4. Salir: ");
+            int opción = sc.nextInt();
+            switch (opción) {
+                case 1:
+                    System.out.println("¿Cúanto dinero quieres ingresar?: ");
+                    long cantidadING = sc.nextLong();
+                    ingresar(cantidadING);
+                    System.out.println("¿Quiéres realizar otra operación? (true/false)");
+                    seguir = sc.nextBoolean();
+                    break;
+                case 2:
+                    System.out.println("Cuánto dinero quieres retirar?: ");
+                    long cantidadRET = sc.nextLong();
+                    retirar(cantidadRET);
+                    System.out.println("¿Quiéres realizar otra operación? (true/false)");
+                    seguir = sc.nextBoolean();
+                    break;
+                case 3:
+                    System.out.println("Títular: " + getTitular() + ", Nº Cuenta: " + getNúmero() + ", saldo: " + getSaldo() + ", bloqueada: " + isBloqueada());
+                    System.out.println("¿Quiéres realizar otra operación? (true/false)");
+                    seguir = sc.nextBoolean();
+                    break;
+                case 4:
+                    seguir = false;
+                    break;
+            }
+        } while (seguir);
     }
 }
