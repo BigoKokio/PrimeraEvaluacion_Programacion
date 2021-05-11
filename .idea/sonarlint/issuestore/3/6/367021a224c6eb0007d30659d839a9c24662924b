@@ -1,0 +1,25 @@
+
+~
+java:S1192"cDefine a constant instead of duplicating this literal "----------------------------------" 5 times.(Õ÷õúÿÿÿÿ
+f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ª¬Í”
+f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(âÉ„€
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ô’ƒØøÿÿÿÿ
+S
+java:S1854"6Remove this useless assignment to local variable "C1".(âÉ„€8¤à˜Î‘/
+S	java:S106"9Replace this use of System.out or System.err by a logger.(Õ÷õúÿÿÿÿ
+S	java:S106	"9Replace this use of System.out or System.err by a logger.(Õ÷õúÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(Õ÷õúÿÿÿÿ
+Q	java:S125"<This block of commented-out lines of code should be removed.(µ·Ä‰
+P
+java:S2209"5Change this instance-reference to a static reference.(ªûãĞûÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(Õ÷õúÿÿÿÿ
+V	java:S125"<This block of commented-out lines of code should be removed.(ØÄş¶ıÿÿÿÿ
+P
+java:S2209"5Change this instance-reference to a static reference.(˜ÈÒ„şÿÿÿÿ
+K
+java:S2209"5Change this instance-reference to a static reference.(ªæ«
+S	java:S106"9Replace this use of System.out or System.err by a logger.(Õ÷õúÿÿÿÿ
+V	java:S125"<This block of commented-out lines of code should be removed.(‚•«½ùÿÿÿÿ
+V	java:S125"<This block of commented-out lines of code should be removed.(éï–ïøÿÿÿÿ
+D
+java:S1481"'Remove this unused "C1" local variable.(âÉ„€8«à˜Î‘/

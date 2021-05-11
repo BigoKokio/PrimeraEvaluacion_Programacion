@@ -1,0 +1,65 @@
+
+^
+java:S11927"HDefine a constant instead of duplicating this literal "Saldo: " 3 times.(Ïš½¿
+l
+java:S1192;"VDefine a constant instead of duplicating this literal "IntelliJ\\..\\Banco\\" 9 times.(çæ¹¡
+h
+java:S1192;"RDefine a constant instead of duplicating this literal "\\movimientos.txt" 3 times.(çæ¹¡
+2
+java:S1643#"Use a StringBuilder instead.(ÇÕ£¨
+k	java:S117/"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ˆÏ€ıÿÿÿÿ
+e	java:S117<"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(—–»d
+k	java:S117="QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÂŸøÿÿÿÿ
+e	java:S117K"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(—–»d
+k	java:S117L"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(şõ«÷üÿÿÿÿ
+f	java:S117a"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Åº·
+k	java:S117l"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ê„ úÿÿÿÿ
+f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(—–»d
+l	java:S117˜"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ãß£Õûÿÿÿÿ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ô’ƒØøÿÿÿÿ
+p
+java:S1488"ZImmediately return this expression instead of assigning it to the temporary variable "cc".(•¾œù
+f
+java:S3008"PRename this field "raÃ­z" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¼…õ¬
+V	java:S125"<This block of commented-out lines of code should be removed.(ç£¦Çÿÿÿÿÿ
+?
+java:S2140")Use "java.util.Random.nextInt()" instead.(‹ù°ö
+D
+java:S2140")Use "java.util.Random.nextInt()" instead.(¦ëÇƒşÿÿÿÿ
+h	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‹ä¯ºúÿÿÿÿ
+>
+java:S2140"")Use "java.util.Random.nextInt()" instead.(›¢ú!
+V	java:S125$"<This block of commented-out lines of code should be removed.(ùŒûÃıÿÿÿÿ
+=
+java:S11255"'Remove the unnecessary boolean literal.(ã‰ÇÚ
+N	java:S1067"9Replace this use of System.out or System.err by a logger.(Ïš½¿
+N	java:S1069"9Replace this use of System.out or System.err by a logger.(İ˜ÖÈ
+S	java:S106?"9Replace this use of System.out or System.err by a logger.(Ûäºøÿÿÿÿ
+=
+java:S1125F"'Remove the unnecessary boolean literal.(ã‰ÇÚ
+N	java:S106I"9Replace this use of System.out or System.err by a logger.(Ïš½¿
+S	java:S106N"9Replace this use of System.out or System.err by a logger.(Ûäºøÿÿÿÿ
+S	java:S106R"9Replace this use of System.out or System.err by a logger.(›œ¯ûÿÿÿÿ
+N	java:S106U"9Replace this use of System.out or System.err by a logger.(İ˜ÖÈ
+S	java:S106k"9Replace this use of System.out or System.err by a logger.(ñÁ¤èşÿÿÿÿ
+N	java:S106t"9Replace this use of System.out or System.err by a logger.(ó×š€
+M	java:S106v"9Replace this use of System.out or System.err by a logger.(·Üà
+S	java:S106~"9Replace this use of System.out or System.err by a logger.(Š‹÷šûÿÿÿÿ
+T	java:S106ƒ"9Replace this use of System.out or System.err by a logger.(íÉ»ıÿÿÿÿ
+O	java:S106ˆ"9Replace this use of System.out or System.err by a logger.(ãÍİØ
+j
+java:S4042‘"NUse "java.nio.file.Files#delete" here for better messages on error conditions.(«­©ùÿÿÿÿ
+=
+java:S1125’"'Remove the unnecessary boolean literal.(êàÕZ
+T	java:S106—"9Replace this use of System.out or System.err by a logger.(ÌÚ¹šûÿÿÿÿ
+T	java:S106œ"9Replace this use of System.out or System.err by a logger.(ëœé¡øÿÿÿÿ
+j
+java:S4042«"NUse "java.nio.file.Files#delete" here for better messages on error conditions.(ˆ­¤Áşÿÿÿÿ
+V	java:S899«";Do something with the "boolean" value returned by "delete".(ˆ­¤Áşÿÿÿÿ
+d
+java:S4042®"NUse "java.nio.file.Files#delete" here for better messages on error conditions.(Ö¡½<
+T	java:S106¯"9Replace this use of System.out or System.err by a logger.(õ¢Äúÿÿÿÿ
+@
+java:S1481"+Remove this unused "creada" local variable.(£×ù
+?
+java:S1481x"*Remove this unused "saldo" local variable.(¾»¦Q

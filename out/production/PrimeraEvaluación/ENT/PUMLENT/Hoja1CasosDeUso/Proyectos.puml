@@ -1,0 +1,24 @@
+@startuml proyectos
+left to right direction
+
+actor "Administrador de proyectos" as admin
+(Agregar proyecto) as (add)
+(Eliminar proyecto) as (del)
+(Actualizar proyecto) as (upd)
+(Buscar proyecto) as (search)
+
+admin -- (add)
+admin -- (del)
+admin -- (upd)
+
+(del) ..> (search) : include
+(upd) ..> (search) : include
+
+(upd) <.. (Cambiar información tareas) : extend
+(upd) <.. (Cambiar recursos asociados) : extend
+
+admin -- (Informar miembros equipo)
+(Informar miembros equipo) <.. (Enviar e-mail) : extend
+(Informar miembros equipo) <.. (Publicar en sitio web) : extend
+
+@enduml

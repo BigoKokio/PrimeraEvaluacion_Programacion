@@ -1,0 +1,20 @@
+@startuml tienda
+left to right direction
+
+(Gestionar inventario) as (gesinv)
+(Gestionar proveedores) as (gesprov)
+(Editar archivo articulos) as (editart)
+(Crear artículo) as (creart)
+
+Comerciante -- (gesinv)
+(gesinv) <.. (Imprimir inventario) : extend
+(gesinv) <.. (Borrar artículo) : extend
+(gesinv) <.. (editart) : extend
+
+Comerciante -- (gesprov)
+(gesprov) .> (editart) : extend
+
+Comerciante -- (creart)
+(creart) .> (gesprov) : include
+(creart) <. (Crear proveedor) : extend
+@enduml

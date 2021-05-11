@@ -1,0 +1,61 @@
+@startuml Seis Naciones
+
+skinparam classAttributeIconSize 0
+
+enum selecciones << enumeration >> {
+    escocia
+    francia
+    gales
+    inglaterra
+    irlanda
+    italia
+}
+
+enum posiciones << enumeration >> {
+    pilier
+    talonador
+    segunda_línea
+    tercera_línea
+    medio_melé
+    apertura
+    centro
+    ala
+    zaguero
+}
+
+class jornada {
+    - día : Integer
+}
+
+class partido {
+    - sede : String
+    - árbitro : String
+}
+
+class equipo {
+    - estadio : String
+    - capacidad : Integer
+    - ciudad : String
+    - entrenador : String
+    - capitán : String
+}
+
+class jugadores {
+    - nombre : String
+    - posiciones : String
+    - fechaNacimiento : Date
+}
+
+enum puntos << enumeration >> {
+    4 victoria
+    2 empate
+    0 derrota
+    1 ofensivo
+    1 defensivo
+}
+
+jornada "1..3" -- "1..5" partido
+equipo "15" -- "1" jugadores
+partido "1" -- "2" equipo
+
+@enduml

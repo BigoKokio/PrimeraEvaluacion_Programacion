@@ -1,0 +1,41 @@
+@startuml
+
+skinparam classAttributeIconSize 0
+
+class Sanitario {
+    - numEmpleado : Integer
+    - nombre : String
+    + mostrarDatos()
+}
+
+class Médico {
+    - especialidad : String
+}
+
+class Enfermera {
+
+}
+
+class Paciente {
+    /** Atributo que guarda el número del historial del paciente */
+    - numHistoria : Integer
+    /** Atributo que guarda el nombre del paciente */
+    - nombre : String
+    /** Método que recibe un parámetro fecha de tipo date y devuelve una clase file que gestiona ficheros */
+    + generarInforme(Date : fecha) : File
+}
+
+class Análisis {
+    - tipo : String
+    - fecha : Date
+}
+
+Médico --|> Sanitario
+Enfermera --|> Sanitario
+Médico "1" -- "0..*" Análisis : "solicita"
+Enfermera "1..*" -- "0..*" Análisis : "efectúa"
+Paciente "1" -- "0..*" Análisis : "se realiza"
+Médico "1..*" -- "0..*" Paciente : "atiende"
+Enfermera "1" -- "0..*" Paciente : "asiste"
+
+@enduml

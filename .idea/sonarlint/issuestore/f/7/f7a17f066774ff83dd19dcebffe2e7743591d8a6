@@ -1,0 +1,27 @@
+
+†
+java:S1192"pDefine a constant instead of duplicating this literal "Ha habido un error en la creaciÃ³n de la cuenta" 4 times.( íãé
+f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÕÒ„Š
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ƒàÊ‹ûÿÿÿÿ
+f	java:S117-"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÕÒ„Š
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ô’ƒØøÿÿÿÿ
+I
+java:S1128".Remove this unused import 'java.util.Scanner'.(ÒÜÅ¸úÿÿÿÿ
+A
+java:S1075"&Remove this hard-coded path-delimiter.(ƒ¿÷…ÿÿÿÿÿ
+A
+java:S1075"&Remove this hard-coded path-delimiter.(ƒ¿÷…ÿÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(ô¦Ž‚
+N	java:S106"9Replace this use of System.out or System.err by a logger.( íãé
+S	java:S106"9Replace this use of System.out or System.err by a logger.(—Õ€¼ÿÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.( íãé
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ÛŽäºøÿÿÿÿ
+A
+java:S1075)"&Remove this hard-coded path-delimiter.(ƒ¿÷…ÿÿÿÿÿ
+A
+java:S1075)"&Remove this hard-coded path-delimiter.(ƒ¿÷…ÿÿÿÿÿ
+N	java:S106+"9Replace this use of System.out or System.err by a logger.(ô¦Ž‚
+N	java:S106,"9Replace this use of System.out or System.err by a logger.( íãé
+S	java:S1060"9Replace this use of System.out or System.err by a logger.(—Õ€¼ÿÿÿÿÿ
+N	java:S1061"9Replace this use of System.out or System.err by a logger.( íãé
+S	java:S106Q"9Replace this use of System.out or System.err by a logger.(¡Ê×Îøÿÿÿÿ

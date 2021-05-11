@@ -1,0 +1,22 @@
+
+
+java:S1192"rDefine a constant instead of duplicating this literal "Â¿QuiÃ©res realizar otra operaciÃ³n? (true/false)" 3 times.(ú•ö’üÿÿÿÿ
+f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğãÒ‘
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ô’ƒØøÿÿÿÿ
+g
+java:S1223"LRename this method to prevent any misunderstanding or make it a constructor.(¹·ˆ—ùÿÿÿÿ
+h	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¹·ˆ—ùÿÿÿÿ
+N	java:S106
+"9Replace this use of System.out or System.err by a logger.(ô‘Âí
+N	java:S106"9Replace this use of System.out or System.err by a logger.(‘èªæ
+M	java:S106"9Replace this use of System.out or System.err by a logger.(À‘…3
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ªòò…şÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(™ö™‡
+N	java:S106"9Replace this use of System.out or System.err by a logger.(›£Ú
+<	java:S131""Add a default case to this switch.(ğÆ”Œúÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ìü€úÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ú•ö’üÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(Å±Êºüÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ú•ö’üÿÿÿÿ
+N	java:S106!"9Replace this use of System.out or System.err by a logger.(ÿîÊã
+S	java:S106""9Replace this use of System.out or System.err by a logger.(ú•ö’üÿÿÿÿ

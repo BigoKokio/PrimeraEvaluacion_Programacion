@@ -1,0 +1,28 @@
+@startuml instituto
+
+left to right direction
+skinparam packageStyle rectangle
+
+actor coordinador_curso
+actor profesorado
+actor alumnado
+
+coordinador_curso --|> profesorado
+
+rectangle reserva {
+    (hacer reserva) -- profesorado
+    (aulas) <.. (hacer reserva) : include
+    (material educativo) <.. (hacer reserva) : include
+    (material educativo) ..> (ordenador portatil) : extend
+    (material educativo) ..> (proyector de vídeo) : extend
+    (hacer reserva) -- (agenda)
+    (agenda) -- alumnado
+    (agenda) -- profesorado
+    (horario del aula) -- profesorado
+    (informe) <.. (horario del aula) : include
+    coordinador_curso -- (editar informe)
+    (informe) <.. (editar informe) : include
+
+}
+
+@enduml
